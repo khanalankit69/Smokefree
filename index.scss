@@ -1,0 +1,313 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 1920px;
+    user-select:none;
+    
+}
+  
+nav{
+    height:80px;
+    width:100vw;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button{
+        height:45px;
+        width:100px;
+        border-radius: 20px;
+        outline:none;
+        background: black;
+        border:2px solid white;
+        text-align: center;
+        color:white;
+        margin-right: 50px;
+        font-size: 1.4rem;
+        &:hover{
+            transition: 0.3s linear;
+            background: white;
+            border:2px solid black;
+            color:black;                
+        }
+    }
+    h1{
+        color:white;
+        margin-left: 50px;
+        overflow-y:hidden;
+        text-decoration-line: none;
+    }
+    a{
+        text-decoration-line:none ;
+    }
+}
+
+.hero{
+    height:630px;
+    width:100vw;
+    position: sticky;
+    margin-top:80px;
+    overflow-y:hidden;
+    background-image: url("teens1.jpg") ;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    h1,p{
+        color:white;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: lighter;
+        overflow-y:hidden;
+
+    }
+    h1{
+        max-width: 600px;
+        font-size: 4rem;
+        padding-top:50px;
+        margin: 0px 0px 60px 60px;
+        border-bottom:3px solid yellow;
+        border-bottom-right-radius: 600px;
+    }
+    p{
+        margin:0px 0px 0px 60px;
+        font-size: 2rem;
+    }
+     
+}
+
+
+.message{
+    width:100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height:500px;
+    background-image: url(crush.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    h3{
+        font-weight: lighter;
+    }
+    .msgmessage{
+        font-weight: lighter;
+        font-size: 3.5rem;
+        overflow: hidden;    
+        font-family: monospace;
+        color: black;
+      }
+}
+
+.parts{
+    height:400px;
+    max-width:1920px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    color:#087599;
+        padding:0px;
+        margin:0px;
+        .part1{
+            height:370px;
+            width:370px;
+            overflow-x: hidden;
+            border:1px solid lightgrey;
+            .partimage{
+                background: url("p1.jpg");
+            }
+    }    
+    .part2{
+        
+        height:370px;
+        width:370px;  
+        border:1px solid lightgrey;
+        margin-left: 50px;
+        overflow-x: hidden;
+        .partimage{
+            background: url("p2.jpg");
+        }  
+    }
+    .part3{
+        border:1px solid lightgrey;
+        height:370px;
+        width:370px;
+        margin-left: 50px;
+        overflow-x: hidden;
+        .partimage{
+            background: url("p3.jpg");
+        }
+    }
+    .partimage{
+        height:40%;
+        overflow-x: hidden;
+    }
+    .parttext{
+        height:60%;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        font-size: 1rem;
+        font-family: monospace;
+        transition:background 0.5s;
+        &:hover{
+            color:white;   
+            background:rgb(25, 103, 210);
+            hr{
+                width:90%;
+                background-color: yellow;
+                
+            }
+        }
+        p{
+            margin: 0px 10px 30px 10px;
+            font-size: 17px;
+        }
+        h1{
+            font-size:30px;
+            margin-left:10px;
+            margin-top:10px;
+        }
+        hr{
+            height:3px;
+            background-color:darkblue;
+            width:30%;  
+            margin:0px 10px 0px 10px;
+            transition:width 0.6s;
+        }
+    }
+}
+
+
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
+    height: 100%;
+    width: 0;
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    // background-color: rgb(0,0,0); /* Black fallback color */
+    // background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    background: url(space.jpg);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+  }
+  
+  /* Position the content inside the overlay */
+  .overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  }
+  
+  /* The navigation links inside the overlay */
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  /* Position the close button (top right corner) */
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    color:white;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+
+
+//Making it responsive
+@media (max-width:768px){
+    .hero{
+        height:500px;
+        h1{
+            max-width: 350px;
+            font-size: 2.5rem;
+            padding-top:40px;
+            margin: 0px 0px 40px 60px;
+        }
+        p{
+            font-size: 1.5rem;
+        }
+    }
+}
+@media (max-width:534px){
+    .hero{
+        height:400px;
+        background-size: 150%;
+        h1{ 
+            width:280px;
+            font-size: 2.5rem;
+            padding-bottom: 10px;
+            margin: 0px 0px 30px 40px;
+            font-weight: bolder;
+            border-bottom-right-radius: 120px;
+        }
+        p{
+            font-size: 1.3rem;
+            margin-left:40px;
+        }
+         
+    }
+    .message{
+        height:330px;
+        .msgmessage{
+            font-size: 40px;
+        }
+    }
+    nav{
+        button{
+            height:40px;
+            width:100px;
+            margin-right:40px;
+           
+        }    
+    }
+}
+@media(max-width:1100px){
+    .parts{
+        flex-direction:column;
+        height:1190px;
+        justify-content: space-between;       
+        .part1,.part2,.part3{
+            height:450px;
+            margin:0px 0px 20px 0px;
+        }
+        p{
+            margin-bottom:10px;
+        }
+    }
+    
+}

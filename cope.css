@@ -1,0 +1,53 @@
+.copebody {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(cornsilk));
+  background-image: linear-gradient(pink, cornsilk);
+}
+
+.cope {
+  max-width: 1050px;
+  height: auto;
+}
+
+.cope h1 {
+  text-align: left;
+  overflow-y: hidden;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.cope h2 {
+  text-align: left;
+  overflow-y: hidden;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.cope img {
+  height: 400px;
+  width: 60vw;
+}
+
+.cope p {
+  font-size: 23px;
+  margin: 10px;
+  text-align: left;
+}
+
+@media (max-width: 534px) {
+  .cope {
+    width: 95vw;
+  }
+  .cope h1 {
+    text-align: center;
+  }
+  .cope p {
+    text-align: justify;
+  }
+  .cope img {
+    width: 370px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=cope.css.map */

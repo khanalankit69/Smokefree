@@ -1,0 +1,48 @@
+
+
+
+.triggerbody{
+    background-image:linear-gradient(pink,cornsilk);
+    // color:
+}
+.trigger{
+    max-width: 1050px;
+    h1{
+        text-align: left;
+        overflow-y: hidden;
+        font-weight: bolder;
+        font-size:2rem;
+    }
+    img{
+        height: 500px;  
+        width: 60vw;
+        margin:auto;
+        object-fit: cover;
+    }
+    p{
+        font-size:23px; 
+        margin:10px;
+        text-align: left;
+    }
+    b{
+        font-weight: bolder;
+    }
+    li{
+        font-size:23px; 
+        margin:10px;
+        text-align: left;
+    }
+}
+@media(max-width:534px){
+    .trigger{
+        width:95vw;
+        h1,p{
+            text-align: justify;
+        }
+        img{
+            width:350px;
+            object-fit: contain;
+            height:300px ;
+        }
+    }
+}

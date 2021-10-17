@@ -1,0 +1,44 @@
+.riskbody{
+    background-image:linear-gradient(pink,cornsilk);
+    // color:
+}
+.risks{
+    max-width: 1050px;
+    h1{
+        text-align: center;
+        overflow-y: hidden;
+        font-weight: bolder;
+        font-size:2rem;
+    }
+    img{
+        height: 400px;
+        width: 60vw;
+        
+    }
+    p{
+        font-size:23px; 
+        margin:10px;
+        text-align: left;
+    }
+    b{
+        font-weight: bolder;
+    }
+    li{
+        font-size:23px; 
+        margin:10px;
+        text-align: left;
+    }
+}
+@media(max-width:534px){
+    .risks{
+        width:95vw;
+        p{
+            text-align: justify;
+        }
+        img{
+            width:370px;
+            object-fit:cover;
+            height:300px ;
+        }
+    }
+}

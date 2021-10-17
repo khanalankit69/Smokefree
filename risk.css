@@ -1,0 +1,52 @@
+.riskbody {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(cornsilk));
+  background-image: linear-gradient(pink, cornsilk);
+}
+
+.risks {
+  max-width: 1050px;
+}
+
+.risks h1 {
+  text-align: center;
+  overflow-y: hidden;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.risks img {
+  height: 400px;
+  width: 60vw;
+}
+
+.risks p {
+  font-size: 23px;
+  margin: 10px;
+  text-align: left;
+}
+
+.risks b {
+  font-weight: bolder;
+}
+
+.risks li {
+  font-size: 23px;
+  margin: 10px;
+  text-align: left;
+}
+
+@media (max-width: 534px) {
+  .risks {
+    width: 95vw;
+  }
+  .risks p {
+    text-align: justify;
+  }
+  .risks img {
+    width: 370px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=risk.css.map */

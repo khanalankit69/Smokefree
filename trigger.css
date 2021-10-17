@@ -1,0 +1,55 @@
+.triggerbody {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(cornsilk));
+  background-image: linear-gradient(pink, cornsilk);
+}
+
+.trigger {
+  max-width: 1050px;
+}
+
+.trigger h1 {
+  text-align: left;
+  overflow-y: hidden;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+.trigger img {
+  height: 500px;
+  width: 60vw;
+  margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trigger p {
+  font-size: 23px;
+  margin: 10px;
+  text-align: left;
+}
+
+.trigger b {
+  font-weight: bolder;
+}
+
+.trigger li {
+  font-size: 23px;
+  margin: 10px;
+  text-align: left;
+}
+
+@media (max-width: 534px) {
+  .trigger {
+    width: 95vw;
+  }
+  .trigger h1, .trigger p {
+    text-align: justify;
+  }
+  .trigger img {
+    width: 350px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    height: 300px;
+  }
+}
+/*# sourceMappingURL=trigger.css.map */

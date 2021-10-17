@@ -1,0 +1,47 @@
+.copebody{
+    background-image:linear-gradient(pink,cornsilk);
+    // color:
+}
+.cope{
+    max-width: 1050px;
+    height:auto;
+    h1{
+        text-align: left;
+        overflow-y: hidden;
+        font-weight: bolder;    
+        font-size:2rem;
+    }
+    h2{
+        text-align: left;
+        overflow-y: hidden;
+        font-weight: bolder;
+        font-size: 2rem;
+
+    }
+    img{
+        height: 400px;
+        width: 60vw;
+        
+    }
+    p{
+        font-size:23px; 
+        margin:10px;
+        text-align: left;
+    }
+}
+@media(max-width:534px){
+    .cope{
+        width:95vw;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+        img{
+            width:370px;
+            object-fit:cover;
+            height:300px ;
+        }
+    }
+}
